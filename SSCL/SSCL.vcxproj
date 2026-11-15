@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c0cd8c4d-525e-4213-89aa-bbe9db4d1d25}</ProjectGuid>
+    <RootNamespace>SSCL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+
+  <PropertyGroup Label="Vcpkg">
+    <!-- 开发文档 §4.1：依赖走 VS 自带 vcpkg 清单模式（vcpkg.json）。
+     若 VS 未定义 VcpkgRoot，回退到文档指定的捆绑路径（Project Memory E-001）。 -->
+    <VcpkgRoot Condition="'$(VcpkgRoot)' == '' And '$(VSInstallDir)' != ''">$(VSInstallDir)VC\vcpkg</VcpkgRoot>
+    <VcpkgRoot Condition="'$(VcpkgRoot)' == ''">D:\Software\Visual_Studio\2026\VC\vcpkg</VcpkgRoot>
+    <VcpkgEnabled>true</VcpkgEnabled>
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+    <VcpkgTriplet>x64-windows-static</VcpkgTriplet>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VcpkgRoot)\scripts\buildsystems\msbuild\vcpkg.props" Condition="Exists('$(VcpkgRoot)\scripts\buildsystems\msbuild\vcpkg.props')" />
+  </ImportGroup>
+  <ImportGroup Label="Shared" >
+  </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    </ImportGroup>
+
+  <PropertyGroup Label="UserMacros" />
+
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0A00;_WIN32_WINNT=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)resources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;UNICODE;_UNICODE;WINVER=0x0A00;_WIN32_WINNT=0x0A00;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)src;$(ProjectDir)resources;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Manifest>
+      <EnableSegmentHeap>true</EnableSegmentHeap>
+    </Manifest>
+  </ItemDefinitionGroup>
+
+  <ItemGroup>
+    <ClCompile Include="src\app\main.cpp" />
+    <ClCompile Include="src\ui\controls\button.cpp" />
+    <ClCompile Include="src\ui\controls\card.cpp" />
+    <ClCompile Include="src\ui\controls\label.cpp" />
+    <ClCompile Include="src\ui\controls\skin_avatar.cpp" />
+    <ClCompile Include="src\ui\controls\smooth_scroll.cpp" />
+    <ClCompile Include="src\ui\controls\terminal_view.cpp" />
+    <ClCompile Include="src\ui\controls\text_box.cpp" />
+    <ClCompile Include="src\ui\framework\image_loader.cpp" />
+    <ClCompile Include="src\ui\framework\icon_manager.cpp" />
+    <ClCompile Include="src\ui\framework\motion.cpp" />
+    <ClCompile Include="src\ui\framework\remote_image.cpp" />
+    <ClCompile Include="src\ui\framework\renderer.cpp" />
+    <ClCompile Include="src\ui\framework\splash.cpp" />
+    <ClCompile Include="src\ui\framework\tooltip.cpp" />
+    <ClCompile Include="src\ui\framework\window.cpp" />
+    <ClCompile Include="src\ui\setup\setup_wizard.cpp" />
+    <ClCompile Include="src\ui\pages\home_page.cpp" />
+    <ClCompile Include="src\ui\account\account_dialog.cpp" />
+    <ClCompile Include="src\ui\account\account_window.cpp" />
+    <ClCompile Include="src\ui\pages\addons_page.cpp" />
+    <ClCompile Include="src\ui\pages\settings_page.cpp" />
+    <ClCompile Include="src\ui\pages\task_page.cpp" />
+    <ClCompile Include="src\ui\pages\version_page.cpp" />
+    <ClCompile Include="src\ui\pages\version_select_page.cpp" />
+    <ClCompile Include="src\ui\pages\instance_detail_page.cpp" />
+    <ClCompile Include="src\ui\shell\app_shell.cpp" />
+    <ClCompile Include="src\ui\theme\theme.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="sscl.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ui\controls\button.hpp" />
+    <ClInclude Include="src\ui\controls\card.hpp" />
+    <ClInclude Include="src\ui\controls\label.hpp" />
+    <ClInclude Include="src\ui\controls\skin_avatar.hpp" />
+    <ClInclude Include="src\ui\controls\smooth_scroll.hpp" />
+    <ClInclude Include="src\ui\controls\terminal_view.hpp" />
+    <ClInclude Include="src\ui\controls\text_box.hpp" />
+    <ClInclude Include="src\ui\framework\anim.hpp" />
+    <ClInclude Include="src\ui\framework\image_loader.hpp" />
+    <ClInclude Include="src\ui\framework\icon_manager.hpp" />
+    <ClInclude Include="src\ui\framework\motion.hpp" />
+    <ClInclude Include="src\ui\framework\remote_image.hpp" />
+    <ClInclude Include="src\ui\framework\renderer.hpp" />
+    <ClInclude Include="src\ui\framework\splash.hpp" />
+    <ClInclude Include="src\ui\framework\tooltip.hpp" />
+    <ClInclude Include="src\ui\framework\page.hpp" />
+    <ClInclude Include="src\ui\framework\ui_element.hpp" />
+    <ClInclude Include="src\ui\framework\version_icon.hpp" />
+    <ClInclude Include="src\ui\framework\window.hpp" />
+    <ClInclude Include="src\ui\setup\setup_wizard.hpp" />
+    <ClInclude Include="src\ui\pages\home_page.hpp" />
+    <ClInclude Include="src\ui\account\account_dialog.hpp" />
+    <ClInclude Include="src\ui\account\account_window.hpp" />
+    <ClInclude Include="src\ui\pages\addons_page.hpp" />
+    <ClInclude Include="src\ui\pages\settings_page.hpp" />
+    <ClInclude Include="src\ui\pages\task_page.hpp" />
+    <ClInclude Include="src\ui\pages\version_page.hpp" />
+    <ClInclude Include="src\ui\pages\version_select_page.hpp" />
+    <ClInclude Include="src\ui\pages\instance_detail_page.hpp" />
+    <ClInclude Include="src\ui\shell\app_shell.hpp" />
+    <ClInclude Include="src\ui\shell\shell_layout.hpp" />
+    <ClInclude Include="src\ui\theme\theme.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resources\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\sscl-app-icon.ico" />
+    <None Include="assets\icons\archive.svg" />
+    <None Include="assets\icons\arrow_back.svg" />
+    <None Include="assets\icons\arrow_forward.svg" />
+    <None Include="assets\icons\build.svg" />
+    <None Include="assets\icons\check.svg" />
+    <None Include="assets\icons\close.svg" />
+    <None Include="assets\icons\content_copy.svg" />
+    <None Include="assets\icons\delete.svg" />
+    <None Include="assets\icons\download.svg" />
+    <None Include="assets\icons\edit.svg" />
+    <None Include="assets\icons\extension.svg" />
+    <None Include="assets\icons\folder_open.svg" />
+    <None Include="assets\icons\home.svg" />
+    <None Include="assets\icons\list.svg" />
+    <None Include="assets\icons\login.svg" />
+    <None Include="assets\icons\manage_accounts.svg" />
+    <None Include="assets\icons\open_in_new.svg" />
+    <None Include="assets\icons\person_add.svg" />
+    <None Include="assets\icons\play_arrow.svg" />
+    <None Include="assets\icons\refresh.svg" />
+    <None Include="assets\icons\search.svg" />
+    <None Include="assets\icons\settings.svg" />
+    <None Include="assets\icons\star.svg" />
+    <None Include="assets\icons\upload_file.svg" />
+    <None Include="assets\icons\version-fabric.svg" />
+    <None Include="assets\icons\version-forge.svg" />
+    <None Include="assets\icons\version-neoforge.svg" />
+    <None Include="assets\icons\version-vanilla.svg" />
+    <None Include="assets\icons\LICENSE-material-symbols.txt" />
+    <None Include="THIRD_PARTY_NOTICES.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="SSCL.Core.vcxproj">
+      <Project>{7cd3e58a-cf7a-4455-9d71-45b630d83770}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VcpkgRoot)\scripts\buildsystems\msbuild\vcpkg.targets" Condition="Exists('$(VcpkgRoot)\scripts\buildsystems\msbuild\vcpkg.targets')" />
+  </ImportGroup>
+</Project>

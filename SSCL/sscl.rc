@@ -1,0 +1,76 @@
+// SSCL resource script: application icon (EXE icon / window icon / taskbar / Alt-Tab).
+// Icon source: resources/sscl-app-icon.ico (16/32/64/128/256, 32-bit), created by owner.
+#include "resources/resource.h"
+
+IDI_SSCL_APP ICON "resources/sscl-app-icon.ico"
+IDR_SSCL_APP_ICON RCDATA "resources/sscl-app-icon.ico"
+
+// Material Symbols (Outlined, 400, 24dp) — Apache License 2.0.
+// Source: https://github.com/google/material-design-icons/tree/master/symbols/web
+// Resource names match IconManager::draw(name, ...).
+arrow_back RCDATA "assets/icons/arrow_back.svg"
+arrow_forward RCDATA "assets/icons/arrow_forward.svg"
+home RCDATA "assets/icons/home.svg"
+download RCDATA "assets/icons/download.svg"
+extension RCDATA "assets/icons/extension.svg"
+settings RCDATA "assets/icons/settings.svg"
+manage_accounts RCDATA "assets/icons/manage_accounts.svg"
+list RCDATA "assets/icons/list.svg"
+close RCDATA "assets/icons/close.svg"
+delete RCDATA "assets/icons/delete.svg"
+check RCDATA "assets/icons/check.svg"
+folder_open RCDATA "assets/icons/folder_open.svg"
+edit RCDATA "assets/icons/edit.svg"
+search RCDATA "assets/icons/search.svg"
+refresh RCDATA "assets/icons/refresh.svg"
+upload_file RCDATA "assets/icons/upload_file.svg"
+star RCDATA "assets/icons/star.svg"
+build RCDATA "assets/icons/build.svg"
+archive RCDATA "assets/icons/archive.svg"
+play_arrow RCDATA "assets/icons/play_arrow.svg"
+person_add RCDATA "assets/icons/person_add.svg"
+login RCDATA "assets/icons/login.svg"
+content_copy RCDATA "assets/icons/content_copy.svg"
+open_in_new RCDATA "assets/icons/open_in_new.svg"
+// D-118：账号管理子窗口 / 主页「切换账号」/ 第三方登录。
+switch_account RCDATA "assets/icons/switch_account.svg"
+person RCDATA "assets/icons/person.svg"
+public RCDATA "assets/icons/public.svg"
+
+// 版本类型默认图标（描边型 SVG；资源名用下划线，RC 标识符不允许连字符）。
+version_vanilla RCDATA "assets/icons/version-vanilla.svg"
+version_fabric RCDATA "assets/icons/version-fabric.svg"
+version_forge RCDATA "assets/icons/version-forge.svg"
+version_neoforge RCDATA "assets/icons/version-neoforge.svg"
+
+// Resource ID 1 = VS_VERSION_INFO. 必须使用数值 ID：
+// 未包含 winver.h 时符号名会被 rc.exe 当成字符串资源名，Explorer/FileVersionInfo
+// 将读不到公司/产品/版本信息。
+1 VERSIONINFO
+ FILEVERSION 0,1,0,0
+ PRODUCTVERSION 0,1,0,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        // 040904b0 = 英语（美国）+ Unicode；与 Translation 的 0x409, 1200 对应。
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Sodium_Sulfate"
+            VALUE "FileDescription", "Sodium Sulfate Craft Launcher"
+            VALUE "FileVersion", "0.1.0"
+            VALUE "InternalName", "SSCL"
+            VALUE "OriginalFilename", "SSCL.exe"
+            VALUE "ProductName", "Sodium Sulfate Craft Launcher"
+            VALUE "ProductVersion", "0.1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="SSCL.Core.vcxproj" Id="7cd3e58a-cf7a-4455-9d71-45b630d83770" />
+  <Project Path="SSCL.vcxproj" Id="c0cd8c4d-525e-4213-89aa-bbe9db4d1d25" />
+  <Project Path="SSCL.Tests.vcxproj" Id="1df63b3a-4a38-4331-a58d-ed84dc38b194" />
+</Solution>

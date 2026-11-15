@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c1d2e3f4-0001-4000-8000-000000000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\app">
+      <UniqueIdentifier>{c1d2e3f4-0002-4000-8000-000000000002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui">
+      <UniqueIdentifier>{c1d2e3f4-0003-4000-8000-000000000003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\framework">
+      <UniqueIdentifier>{c1d2e3f4-0004-4000-8000-000000000004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\controls">
+      <UniqueIdentifier>{c1d2e3f4-0005-4000-8000-000000000005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\pages">
+      <UniqueIdentifier>{c1d2e3f4-0006-4000-8000-000000000006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\theme">
+      <UniqueIdentifier>{c1d2e3f4-0007-4000-8000-000000000007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\shell">
+      <UniqueIdentifier>{c1d2e3f4-0008-4000-8000-000000000008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\setup">
+      <UniqueIdentifier>{c1d2e3f4-0009-4000-8000-000000000009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui\account">
+      <UniqueIdentifier>{c1d2e3f4-000a-4000-8000-00000000000a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\app\main.cpp">
+      <Filter>src\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\framework\renderer.cpp">
+      <Filter>src\ui\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\framework\window.cpp">
+      <Filter>src\ui\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\controls\button.cpp">
+      <Filter>src\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\controls\card.cpp">
+      <Filter>src\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\controls\label.cpp">
+      <Filter>src\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\controls\smooth_scroll.cpp">
+      <Filter>src\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\controls\terminal_view.cpp">
+      <Filter>src\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\controls\text_box.cpp">
+      <Filter>src\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\controls\skin_avatar.cpp">
+      <Filter>src\ui\controls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\framework\icon_manager.cpp">
+      <Filter>src\ui\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\framework\image_loader.cpp">
+      <Filter>src\ui\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\framework\motion.cpp">
+      <Filter>src\ui\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\framework\remote_image.cpp">
+      <Filter>src\ui\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\framework\splash.cpp">
+      <Filter>src\ui\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\framework\tooltip.cpp">
+      <Filter>src\ui\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\home_page.cpp">
+      <Filter>src\ui\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\addons_page.cpp">
+      <Filter>src\ui\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\settings_page.cpp">
+      <Filter>src\ui\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\task_page.cpp">
+      <Filter>src\ui\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\version_page.cpp">
+      <Filter>src\ui\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\version_select_page.cpp">
+      <Filter>src\ui\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\pages\instance_detail_page.cpp">
+      <Filter>src\ui\pages</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\shell\app_shell.cpp">
+      <Filter>src\ui\shell</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\setup\setup_wizard.cpp">
+      <Filter>src\ui\setup</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\account\account_dialog.cpp">
+      <Filter>src\ui\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\account\account_window.cpp">
+      <Filter>src\ui\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui\theme\theme.cpp">
+      <Filter>src\ui\theme</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ui\framework\anim.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\renderer.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\icon_manager.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\image_loader.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\motion.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\remote_image.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\splash.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\tooltip.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\version_icon.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\window.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\ui_element.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\framework\page.hpp">
+      <Filter>src\ui\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\controls\button.hpp">
+      <Filter>src\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\controls\card.hpp">
+      <Filter>src\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\controls\label.hpp">
+      <Filter>src\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\controls\smooth_scroll.hpp">
+      <Filter>src\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\controls\terminal_view.hpp">
+      <Filter>src\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\controls\text_box.hpp">
+      <Filter>src\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\controls\skin_avatar.hpp">
+      <Filter>src\ui\controls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\pages\home_page.hpp">
+      <Filter>src\ui\pages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\pages\addons_page.hpp">
+      <Filter>src\ui\pages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\pages\settings_page.hpp">
+      <Filter>src\ui\pages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\pages\task_page.hpp">
+      <Filter>src\ui\pages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\pages\version_page.hpp">
+      <Filter>src\ui\pages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\pages\version_select_page.hpp">
+      <Filter>src\ui\pages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\pages\instance_detail_page.hpp">
+      <Filter>src\ui\pages</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\shell\app_shell.hpp">
+      <Filter>src\ui\shell</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\shell\shell_layout.hpp">
+      <Filter>src\ui\shell</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\setup\setup_wizard.hpp">
+      <Filter>src\ui\setup</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\account\account_dialog.hpp">
+      <Filter>src\ui\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\account\account_window.hpp">
+      <Filter>src\ui\account</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\resource.h">
+      <Filter>资源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ui\theme\theme.hpp">
+      <Filter>src\ui\theme</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

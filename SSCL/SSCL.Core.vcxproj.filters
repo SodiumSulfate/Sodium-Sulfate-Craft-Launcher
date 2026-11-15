@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{a1b2c3d4-0001-4000-8000-000000000001}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\util">
+      <UniqueIdentifier>{a1b2c3d4-0002-4000-8000-000000000002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{a1b2c3d4-0003-4000-8000-000000000003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\task">
+      <UniqueIdentifier>{a1b2c3d4-0006-4000-8000-000000000006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\download">
+      <UniqueIdentifier>{a1b2c3d4-0007-4000-8000-000000000007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\launch">
+      <UniqueIdentifier>{a1b2c3d4-0008-4000-8000-000000000008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\account">
+      <UniqueIdentifier>{a1b2c3d4-0009-4000-8000-000000000009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\game">
+      <UniqueIdentifier>{a1b2c3d4-000a-4000-8000-00000000000a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\java">
+      <UniqueIdentifier>{a1b2c3d4-000b-4000-8000-00000000000b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\loader">
+      <UniqueIdentifier>{a1b2c3d4-000c-4000-8000-00000000000c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\mod">
+      <UniqueIdentifier>{a1b2c3d4-000d-4000-8000-00000000000d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\modplatform">
+      <UniqueIdentifier>{a1b2c3d4-000e-4000-8000-00000000000e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\modpack">
+      <UniqueIdentifier>{a1b2c3d4-0010-4000-8000-000000000010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\config">
+      <UniqueIdentifier>{a1b2c3d4-000f-4000-8000-00000000000f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\platform">
+      <UniqueIdentifier>{a1b2c3d4-0004-4000-8000-000000000004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\i18n">
+      <UniqueIdentifier>{a1b2c3d4-0005-4000-8000-000000000005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\util\string_utils.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\log.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\file_utils.cpp">
+      <Filter>src\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\path_utils.cpp">
+      <Filter>src\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\process.cpp">
+      <Filter>src\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\system_monitor.cpp">
+      <Filter>src\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\oauth_loopback_server.cpp">
+      <Filter>src\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\shell_utils.cpp">
+      <Filter>src\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\task\task.cpp">
+      <Filter>src\core\task</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\task\task_group.cpp">
+      <Filter>src\core\task</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\task\task_executor.cpp">
+      <Filter>src\core\task</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\task\task_center.cpp">
+      <Filter>src\core\task</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\thread_pool.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\hash.cpp">
+      <Filter>src\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\http_client.cpp">
+      <Filter>src\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\download\download_task.cpp">
+      <Filter>src\core\download</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\download\download_scheduler.cpp">
+      <Filter>src\core\download</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\download\adaptive_concurrency.cpp">
+      <Filter>src\core\download</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\download\mirror_map.cpp">
+      <Filter>src\core\download</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\download\rate_limiter.cpp">
+      <Filter>src\core\download</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\launch\version_json.cpp">
+      <Filter>src\core\launch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\launch\launch_command.cpp">
+      <Filter>src\core\launch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\launch\natives.cpp">
+      <Filter>src\core\launch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\launch\game_launcher.cpp">
+      <Filter>src\core\launch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\account\account.cpp">
+      <Filter>src\core\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\account\account_store.cpp">
+      <Filter>src\core\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\account\account_manager.cpp">
+      <Filter>src\core\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\account\account_skin.cpp">
+      <Filter>src\core\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\account\authlib_auth.cpp">
+      <Filter>src\core\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\account\microsoft_auth.cpp">
+      <Filter>src\core\account</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\game\file_plan.cpp">
+      <Filter>src\core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\game\game_service.cpp">
+      <Filter>src\core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\game\instance_paths.cpp">
+      <Filter>src\core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\game\instance_launch.cpp">
+      <Filter>src\core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\game\instance_registry.cpp">
+      <Filter>src\core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\game\pcl_version.cpp">
+      <Filter>src\core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\game\launcher_config.cpp">
+      <Filter>src\core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\game\version_list.cpp">
+      <Filter>src\core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\java\java_manager.cpp">
+      <Filter>src\core\java</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\java\java_downloader.cpp">
+      <Filter>src\core\java</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\modpack\modpack_importer.cpp">
+      <Filter>src\core\modpack</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\loader\installer_profile.cpp">
+      <Filter>src\core\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\loader\loader_catalog.cpp">
+      <Filter>src\core\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\loader\loader_installer.cpp">
+      <Filter>src\core\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\loader\maven_metadata.cpp">
+      <Filter>src\core\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\loader\processor_runner.cpp">
+      <Filter>src\core\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\mod\mod_name.cpp">
+      <Filter>src\core\mod</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\mod\mod_download_planner.cpp">
+      <Filter>src\core\mod</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\mod\mod_scanner.cpp">
+      <Filter>src\core\mod</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\mod\mod_installer.cpp">
+      <Filter>src\core\mod</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\mod\mod_update.cpp">
+      <Filter>src\core\mod</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\config\secret_store.cpp">
+      <Filter>src\core\config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\config\build_config.cpp">
+      <Filter>src\core\config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\modplatform\mod_api.cpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\modplatform\mod_cache.cpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\modplatform\mod_types.cpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\modplatform\modrinth_client.cpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\modplatform\curseforge_client.cpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\core\modplatform\mod_catalog.cpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\platform\zip_utils.cpp">
+      <Filter>src\platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\util\result.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\string_utils.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\log.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\file_utils.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\path_utils.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\process.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\system_monitor.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\win_error.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\oauth_loopback_server.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\shell_utils.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\task\task.hpp">
+      <Filter>src\core\task</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\task\task_group.hpp">
+      <Filter>src\core\task</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\task\task_executor.hpp">
+      <Filter>src\core\task</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\task\task_center.hpp">
+      <Filter>src\core\task</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\thread_pool.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util\hash.hpp">
+      <Filter>src\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\http_client.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\download\download_task.hpp">
+      <Filter>src\core\download</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\download\download_scheduler.hpp">
+      <Filter>src\core\download</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\download\adaptive_concurrency.hpp">
+      <Filter>src\core\download</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\download\mirror_map.hpp">
+      <Filter>src\core\download</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\download\rate_limiter.hpp">
+      <Filter>src\core\download</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\launch\version_json.hpp">
+      <Filter>src\core\launch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\launch\launch_command.hpp">
+      <Filter>src\core\launch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\launch\natives.hpp">
+      <Filter>src\core\launch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\launch\game_launcher.hpp">
+      <Filter>src\core\launch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\account\account.hpp">
+      <Filter>src\core\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\account\account_store.hpp">
+      <Filter>src\core\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\account\account_manager.hpp">
+      <Filter>src\core\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\account\account_skin.hpp">
+      <Filter>src\core\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\account\authlib_auth.hpp">
+      <Filter>src\core\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\account\microsoft_auth.hpp">
+      <Filter>src\core\account</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\game\file_plan.hpp">
+      <Filter>src\core\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\game\game_service.hpp">
+      <Filter>src\core\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\game\instance_paths.hpp">
+      <Filter>src\core\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\game\instance_launch.hpp">
+      <Filter>src\core\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\game\instance_registry.hpp">
+      <Filter>src\core\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\game\instance_types.hpp">
+      <Filter>src\core\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\game\pcl_version.hpp">
+      <Filter>src\core\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\game\launcher_config.hpp">
+      <Filter>src\core\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\game\version_list.hpp">
+      <Filter>src\core\game</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\java\java_manager.hpp">
+      <Filter>src\core\java</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\java\java_downloader.hpp">
+      <Filter>src\core\java</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\modpack\modpack_importer.hpp">
+      <Filter>src\core\modpack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\loader\installer_profile.hpp">
+      <Filter>src\core\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\loader\loader_catalog.hpp">
+      <Filter>src\core\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\loader\loader_installer.hpp">
+      <Filter>src\core\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\loader\loader_types.hpp">
+      <Filter>src\core\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\loader\maven_metadata.hpp">
+      <Filter>src\core\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\loader\processor_runner.hpp">
+      <Filter>src\core\loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\mod\mod_name.hpp">
+      <Filter>src\core\mod</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\mod\mod_download_planner.hpp">
+      <Filter>src\core\mod</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\mod\mod_scanner.hpp">
+      <Filter>src\core\mod</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\mod\mod_update.hpp">
+      <Filter>src\core\mod</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\mod\mod_installer.hpp">
+      <Filter>src\core\mod</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\config\secret_store.hpp">
+      <Filter>src\core\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\config\build_config.hpp">
+      <Filter>src\core\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\modplatform\mod_api.hpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\modplatform\mod_cache.hpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\modplatform\mod_json.hpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\modplatform\mod_types.hpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\modplatform\modrinth_client.hpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\modplatform\curseforge_client.hpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\core\modplatform\mod_catalog.hpp">
+      <Filter>src\core\modplatform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\platform\zip_utils.hpp">
+      <Filter>src\platform</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

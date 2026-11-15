@@ -1,0 +1,65 @@
+# ============================================================
+# SSCL GitHub 白名单
+# 只发送：
+#   /scripts/build-release.ps1
+#   /SSCL 下的源码、资源与项目配置
+# 其余内容（参考源码、Project Memory、构建产物、VS 环境、
+# 第三方依赖、凭据）全部忽略。
+# ============================================================
+
+# 1) 默认忽略仓库根目录的所有内容
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+
+# 仓库展示图片（README 使用）
+!/docs/
+/docs/*
+!/docs/assets/
+
+# 2) 只放行发布构建脚本
+!/scripts/
+/scripts/*
+!/scripts/build-release.ps1
+
+# 3) 放行 SSCL 工程目录，再逐个放行源码/资源/项目配置
+!/SSCL/
+/SSCL/*
+!/SSCL/src/
+!/SSCL/tests/
+!/SSCL/assets/
+!/SSCL/resources/
+!/SSCL/SSCL.slnx
+!/SSCL/SSCL.vcxproj
+!/SSCL/SSCL.vcxproj.filters
+!/SSCL/SSCL.Core.vcxproj
+!/SSCL/SSCL.Core.vcxproj.filters
+!/SSCL/SSCL.Tests.vcxproj
+!/SSCL/SSCL.Tests.vcxproj.filters
+!/SSCL/sscl.rc
+!/SSCL/vcpkg.json
+!/SSCL/THIRD_PARTY_NOTICES.md
+
+# 4) 明确排除：构建输出、IDE 环境、第三方依赖、凭据
+.vs/
+**/.vs/
+x64/
+**/x64/
+dist/
+**/dist/
+vcpkg_installed/
+**/vcpkg_installed/
+vcpkg_downloads/
+**/vcpkg_downloads/
+*.user
+*.suo
+*.obj
+*.pdb
+*.ilk
+*.log
+*.tmp
+*.cache
+build-secrets.txt
+**/build_secrets.hpp
+**/secrets.dat
